@@ -46,17 +46,18 @@
 
 # 📝 Personal Expense Tracker
 
-A full-stack web app built using Flask, MySQL, HTML, CSS, and JavaScript to manage daily income and expenses.
+A full-stack web application to manage daily income and expenses using Flask and MySQL.
 
 ---
 
 ## 🚀 Features
 
-* 🔐 User login & register
+* 🔐 User Login & Register
 * ➕ Add / ✏️ Edit / ❌ Delete transactions
-* 📊 Category-wise tracking
+* 📊 Category-wise expense tracking
 * 💰 Balance calculation
 * 🥧 Charts using Chart.js
+* 👤 User-specific data (no mixing)
 
 ---
 
@@ -80,6 +81,9 @@ Open: http://127.0.0.1:5000/login
 ## 👨‍💻 Author
 
 Ragul
+
+
+
 
 
 ## 📫 Contact Me
