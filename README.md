@@ -44,7 +44,9 @@
 
 * Manage workers, attendance, cost
 
----
+###📝 Personal Expense Tracker – 
+A full-stack web app built using Flask, MySQL, HTML, CSS, and JavaScript to manage daily income and expenses. 
+Features include user authentication, category-wise tracking, balance calculation, and interactive charts using Chart.js.
 
 ## 📫 Contact Me
 
