@@ -101,7 +101,7 @@ ERP system to manage students, teachers, attendance, fees & academic records wit
 
 `React.js` `Node.js` `Express.js` `MongoDB` `Tailwind`
 
-🔗 [Live Demo](https://tnseeds.vercel.app) &nbsp;|&nbsp; See resume for details
+🔗 [Live Demo](https://tutionerp-omega.vercel.app?_vercel_share=DnMVKgKYnfZBffvU5w0gwowFCFcpSDNo) &nbsp;|&nbsp; See resume for details
 
 </td>
 <td width="50%" valign="top">
