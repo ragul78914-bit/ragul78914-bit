@@ -153,6 +153,28 @@ My personal portfolio showcasing projects, skills and experience with a clean, m
 <p align="center">
   <img src="https://raw.githubusercontent.com/ragul78914-bit/ragul78914-bit/output/dist/pacman-contribution-graph-dark.svg" alt="Pac-Man eating my contributions" />
 </p>
+  import { ArcadeRenderer } from 'pacman-contribution-graph';
+
+    // Replace [game-name] with a valid game name
+    const renderer = new ArcadeRenderer({
+    	game: '[game-name]',
+    	username: 'your_username',
+    	platform: 'github', // or 'gitlab'
+    	gameTheme: 'github-dark', // 'github', 'github-dark', 'gitlab', or 'gitlab-dark'
+    	playerStyle: 'opportunistic', // Pac-Man only: 'conservative', 'aggressive', or 'opportunistic'
+    	svgCallback: (svg) => {
+    		// called with the generated SVG string
+    		document.getElementById('output').innerHTML = svg;
+    	},
+    	gameOverCallback: () => {
+    		console.log('Game over!');
+    	},
+    	pointsIncreasedCallback: (points) => {
+    		console.log('Score:', points);
+    	}
+    });
+    renderer.start();
+    ```
 
 <details>
 <summary>⚙️ How to activate this (one-time setup, ~5 minutes)</summary>
