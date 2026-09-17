@@ -149,47 +149,12 @@ My personal portfolio showcasing projects, skills and experience with a clean, m
 ---
 
 ### 🕹️ Pac-Man Contribution Graph
+<h2>👾 Pac-Man Contribution Graph</h2>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ragul78914-bit/ragul78914-bit/output/dist/pacman-contribution-graph-dark.svg" alt="Pac-Man eating my contributions" />
-</p>
-  import { ArcadeRenderer } from 'pacman-contribution-graph';
-
-    // Replace [game-name] with a valid game name
-    const renderer = new ArcadeRenderer({
-    	game: '[game-name]',
-    	username: 'your_username',
-    	platform: 'github', // or 'gitlab'
-    	gameTheme: 'github-dark', // 'github', 'github-dark', 'gitlab', or 'gitlab-dark'
-    	playerStyle: 'opportunistic', // Pac-Man only: 'conservative', 'aggressive', or 'opportunistic'
-    	svgCallback: (svg) => {
-    		// called with the generated SVG string
-    		document.getElementById('output').innerHTML = svg;
-    	},
-    	gameOverCallback: () => {
-    		console.log('Game over!');
-    	},
-    	pointsIncreasedCallback: (points) => {
-    		console.log('Score:', points);
-    	}
-    });
-    renderer.start();
-    ```
-
-<details>
-<summary>⚙️ How to activate this (one-time setup, ~5 minutes)</summary>
-
-This animation isn't automatic from a README alone — GitHub needs a small Action running on your profile repo to generate it. Steps:
-
-1. Create (or open) the special repo named exactly like your username: `ragul78914-bit/ragul78914-bit`.
-2. Copy the `src/` folder and `.github/workflows/pacman.yml` from **[abozanona/pacman-contribution-graph](https://github.com/abozanona/pacman-contribution-graph)** (or use it as a GitHub Action directly — see its README) into that repo.
-3. Go to **Settings → Actions → General → Workflow permissions** and enable **Read and write permissions**.
-4. Go to the **Actions** tab → run the **"generate arcade contribution graph"** workflow manually once.
-5. It will push the finished SVG to an `output` branch. The image link above already points to that path — once it's generated, it will render here automatically. It also refreshes automatically every 12–24 hours.
-
-</details>
-
----
+<img
+  src="https://raw.githubusercontent.com/ragul78914-bit/ragul78914-bit/output/pacman.svg"
+  alt="Pac-Man eating my contributions"
+/>
 
 <p align="center">
   <i>Thanks for stopping by — always open to collaborating on interesting full-stack & AI projects! 🚀</i>
