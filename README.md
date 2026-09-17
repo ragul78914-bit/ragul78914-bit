@@ -149,12 +149,14 @@ My personal portfolio showcasing projects, skills and experience with a clean, m
 ---
 
 ### 🕹️ Pac-Man Contribution Graph
-<h2>👾 Pac-Man Contribution Graph</h2>
 
-<img
-  src="https://raw.githubusercontent.com/ragul78914-bit/ragul78914-bit/output/pacman.svg"
-  alt="Pac-Man eating my contributions"
-/>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ragul78914-bit/ragul78914-bit/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ragul78914-bit/ragul78914-bit/output/pacman-contribution-graph.svg">
+    <img alt="Pac-Man Contribution Graph" src="https://raw.githubusercontent.com/ragul78914-bit/ragul78914-bit/output/pacman-contribution-graph.svg" width="100%">
+  </picture>
+</p>
 
 <p align="center">
   <i>Thanks for stopping by — always open to collaborating on interesting full-stack & AI projects! 🚀</i>

@@ -1,0 +1,39 @@
+name: Generate Pac-Man Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Generate Pac-Man graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+
+      - name: Copy svg with alternate filenames
+        run: |
+          if [ -f dist/pacman-contribution-graph.svg ]; then
+            cp dist/pacman-contribution-graph.svg dist/pacman.svg
+          fi
+          if [ -f dist/pacman-contribution-graph-dark.svg ]; then
+            cp dist/pacman-contribution-graph-dark.svg dist/pacman-dark.svg
+          fi
+
+      - name: Upload Pac-Man graph to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
