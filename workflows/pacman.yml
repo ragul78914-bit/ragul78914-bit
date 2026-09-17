@@ -1,0 +1,29 @@
+name: Generate Pac-Man Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate Pac-Man graph
+        uses: gregkozakiewicz/pacman-contribution-graph@main
+        with:
+          github_username: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Pac-Man graph
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          build_dir: dist
+          jekyll: false
+          target_branch: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
